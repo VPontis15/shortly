@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .nav-btn {
-  @apply px-9 py-4 rounded-3xl;
+  @apply px-12 py-3 rounded-3xl;
 }

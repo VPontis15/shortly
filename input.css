@@ -23,7 +23,7 @@
 }
 
 .card {
-  @apply p-6 max-w-fit leading-7;
+  @apply p-8 max-w-fit leading-7;
 }
 
 .card-heading {

@@ -19,11 +19,11 @@
 }
 
 .cards {
-  @apply flex;
+  @apply flex justify-between;
 }
 
 .card {
-  @apply p-6 max-w-fit;
+  @apply p-6 max-w-fit leading-7;
 }
 
 .card-heading {
@@ -31,5 +31,5 @@
 }
 
 .card-p {
-  @apply max-w-[25ch] text-gray-400;
+  @apply max-w-[26ch] text-gray-400;
 }

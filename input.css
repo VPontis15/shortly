@@ -18,6 +18,18 @@
   @apply px-6 py-2  text-white rounded-lg;
 }
 
+.cards {
+  @apply flex;
+}
+
 .card {
   @apply p-6 max-w-fit;
+}
+
+.card-heading {
+  @apply mb-8 font-bold text-black text-xl;
+}
+
+.card-p {
+  @apply max-w-[25ch] text-gray-400;
 }

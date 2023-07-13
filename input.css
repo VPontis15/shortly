@@ -5,6 +5,9 @@
 .nav-btn {
   @apply px-12 py-3 rounded-3xl;
 }
+.cta-btn {
+  @apply px-8 py-3 rounded-3xl text-sm;
+}
 
 .row {
   @apply flex justify-between items-center;
@@ -32,4 +35,12 @@
 
 .card-p {
   @apply max-w-[26ch] text-gray-400;
+}
+
+.cta {
+  background-color: rgb(59 57 100);
+  background-image: url("../images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 21vw -1vw;
 }

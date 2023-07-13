@@ -736,6 +736,10 @@ video {
   background-color: rgb(45 212 191 / var(--tw-bg-opacity));
 }
 
+.p-20 {
+  padding: 5rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -771,6 +775,11 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -833,6 +842,16 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.cta-btn {
+  border-radius: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .row {
   display: flex;
   align-items: center;
@@ -879,6 +898,14 @@ video {
   max-width: 26ch;
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.cta {
+  background-color: rgb(59 57 100);
+  background-image: url("../images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 21vw -1vw;
 }
 
 .placeholder\:text-orange-300::-moz-placeholder {

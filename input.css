@@ -42,5 +42,5 @@
   background-image: url("../images/bg-boost-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 21vw -1vw;
+  background-position: right -15vw bottom 2vh, left 5vw top 2vh;
 }

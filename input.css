@@ -6,24 +6,27 @@
   .container {
     @apply max-w-[70%] mx-auto;
   }
-}
-.nav-btn {
-  @apply px-12 py-3 rounded-3xl;
-}
-.cta-btn {
-  @apply px-8 py-3 rounded-3xl text-sm;
+
+  .row {
+    @apply flex justify-between items-center;
+  }
 }
 
-.row {
-  @apply flex justify-between items-center;
-}
+@layer components {
+  .nav-btn {
+    @apply px-12 py-3 rounded-3xl;
+  }
+  .cta-btn {
+    @apply px-8 py-3 rounded-3xl text-sm;
+  }
 
-.link {
-  @apply text-cyan;
-}
+  .copy-btn {
+    @apply px-6 py-2  text-white rounded-lg;
+  }
 
-.copy-btn {
-  @apply px-6 py-2  text-white rounded-lg;
+  .link {
+    @apply text-cyan;
+  }
 }
 
 .cards {

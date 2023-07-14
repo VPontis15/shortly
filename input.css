@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .container {
+    @apply max-w-[70%] mx-auto;
+  }
+}
 .nav-btn {
   @apply px-12 py-3 rounded-3xl;
 }

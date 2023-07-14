@@ -27,6 +27,14 @@
   .link {
     @apply text-cyan;
   }
+
+  .footer-links {
+    @apply flex flex-col gap-4 text-gray-400;
+  }
+}
+
+.footer-heading {
+  @apply text-white font-bold mb-2;
 }
 
 .cards {

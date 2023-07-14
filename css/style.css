@@ -556,6 +556,47 @@ video {
   }
 }
 
+.nav-btn {
+  border-radius: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.cta-btn {
+  border-radius: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.copy-btn {
+  border-radius: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.link {
+  --tw-text-opacity: 1;
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .relative {
   position: relative;
 }
@@ -575,6 +616,10 @@ video {
 
 .mb-16 {
   margin-bottom: 4rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mb-20 {
@@ -625,10 +670,6 @@ video {
   max-width: 48ch;
 }
 
-.max-w-\[70\%\] {
-  max-width: 70%;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -650,6 +691,10 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -731,6 +776,11 @@ video {
   background-color: rgb(59 7 100 / var(--tw-bg-opacity));
 }
 
+.bg-slate-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
 .bg-teal-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(45 212 191 / var(--tw-bg-opacity));
@@ -761,6 +811,11 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-14 {
@@ -834,22 +889,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.nav-btn {
-  border-radius: 1.5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.cta-btn {
-  border-radius: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
 }
 
 .row {
@@ -858,17 +901,9 @@ video {
   justify-content: space-between;
 }
 
-.link {
-  --tw-text-opacity: 1;
-  color: hsl(180 66% 49% / var(--tw-text-opacity));
-}
-
-.copy-btn {
-  border-radius: 0.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.footer-heading {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }

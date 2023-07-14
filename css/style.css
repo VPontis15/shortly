@@ -618,10 +618,6 @@ video {
   margin-bottom: 4rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -921,7 +917,7 @@ video {
 }
 
 .card-heading {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 700;

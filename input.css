@@ -46,7 +46,7 @@
 }
 
 .card-heading {
-  @apply mb-8 font-bold text-black text-xl;
+  @apply mb-6 font-bold text-black text-xl;
 }
 
 .card-p {

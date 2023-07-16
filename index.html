@@ -39,10 +39,10 @@
           >
         </div>
       </header>
-      <div class="hero grid grid-cols-2 mb-20">
+      <div class="hero grid lg:grid-cols-2 justify-center items-center mb-20">
         <div class="hero-text flex flex-col justify-center mt-9 items-start">
           <h1
-            class="text-5xl max-w-[15ch] tracking-wide text-gray-800 font-semibold mb-10"
+            class="text-6xl leading-[1.2] max-w-[15ch] tracking-wide text-gray-800 font-semibold mb-10"
           >
             More than just shorter links
           </h1>
@@ -56,12 +56,15 @@
             >Get Started</a
           >
         </div>
-        <img src="images/illustration-working.svg" alt="" />
+        <img class="" src="images/illustration-working.svg" alt="" />
       </div>
       <div class="p-4">
-        <form class="flex bg-purple-950 p-8 gap-4 rounded-lg" action="">
+        <form
+          class="flex mb-24 md:mb-0 flex-col md:flex-row bg-purple-950 p-8 gap-4 rounded-lg"
+          action=""
+        >
           <input
-            class="flex-1 px-6 rounded-lg text-orange-300 placeholder:text-orange-300 focus:outline-none border-2 focus:border-orange-300"
+            class="flex-1 px-6 py-2 rounded-lg text-orange-300 placeholder:md:text-orange-300 focus:outline-none border-2 focus:border-orange-300"
             type="text"
             name="link"
             id="link"
@@ -74,7 +77,9 @@
             Shorten It!
           </button>
         </form>
-        <section class="links-container space-y-20 px-8 py-14 mb-16">
+        <section
+          class="hidden md:block links-container space-y-20 px-8 py-14 mb-16"
+        >
           <div class="row">
             <p class="font-bold text-black">https://www.frontendmentor.io</p>
             <div class="flex gap-4 items-center">

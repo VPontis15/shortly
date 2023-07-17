@@ -38,15 +38,19 @@
 }
 
 .cards {
-  @apply flex justify-between;
+  @apply flex flex-col justify-center md:flex-row text-center md:text-left justify-between;
 }
 
 .card {
-  @apply p-8 max-w-fit leading-7;
+  @apply p-8 max-w-fit leading-7 mx-auto;
 }
 
 .card-heading {
   @apply mb-6 font-bold text-black text-xl;
+}
+
+.card-img {
+  @apply mb-8 bg-black rounded-full p-4 mx-auto md:mx-0;
 }
 
 .card-p {

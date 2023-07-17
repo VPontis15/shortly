@@ -622,6 +622,10 @@ video {
   margin-bottom: 5rem;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
 .mb-32 {
   margin-bottom: 8rem;
 }
@@ -636,10 +640,6 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
 }
 
 .flex {
@@ -745,10 +745,6 @@ video {
   border-radius: 1.5rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -759,11 +755,6 @@ video {
 
 .border-2 {
   border-width: 2px;
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-cyan {
@@ -823,19 +814,14 @@ video {
   padding-bottom: 3.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
@@ -925,10 +911,22 @@ video {
 
 .cards {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   justify-content: space-between;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    text-align: left;
+  }
 }
 
 .card {
+  margin-left: auto;
+  margin-right: auto;
   max-width: -moz-fit-content;
   max-width: fit-content;
   padding: 2rem;
@@ -944,6 +942,23 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.card-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .card-img {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
 .card-p {
   max-width: 26ch;
   --tw-text-opacity: 1;
@@ -956,16 +971,6 @@ video {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
-
-.placeholder\:text-orange-300::-moz-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(253 186 116 / var(--tw-text-opacity));
-}
-
-.placeholder\:text-orange-300::placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(253 186 116 / var(--tw-text-opacity));
 }
 
 .focus\:border-orange-300:focus {
@@ -1007,16 +1012,6 @@ video {
 
   .md\:text-left {
     text-align: left;
-  }
-
-  .md\:placeholder\:text-orange-300::-moz-placeholder {
-    --tw-text-opacity: 1;
-    color: rgb(253 186 116 / var(--tw-text-opacity));
-  }
-
-  .md\:placeholder\:text-orange-300::placeholder {
-    --tw-text-opacity: 1;
-    color: rgb(253 186 116 / var(--tw-text-opacity));
   }
 
   .placeholder\:md\:text-orange-300::-moz-placeholder {

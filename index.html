@@ -22,22 +22,33 @@
   <body class="text-gray-500">
     <div class="container">
       <header class="py-10 flex items-center justify-between mb-12">
-        <div class="flex gap-24">
+        <div class="flex gap-24 items-center justify-between">
           <img src="images/logo.svg" alt="" />
-          <nav class="flex justify-between items-center">
-            <ul class="flex items-center gap-8">
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Resources</a></li>
-            </ul>
-          </nav>
+
+          <div class="mobile-overlay flex justify-between items-center">
+            <nav class="flex justify-between items-center">
+              <ul class="flex items-center gap-8">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Resources</a></li>
+              </ul>
+            </nav>
+
+            <div class="flex ml-auto">
+              <a class="nav-btn" href="#">Log In</a>
+              <a class="text-white font-bold bg-teal-400 nav-btn" href="#"
+                >Sign In</a
+              >
+            </div>
+          </div>
         </div>
-        <div class="flex ml-auto">
-          <a class="nav-btn" href="#">Log In</a>
-          <a class="text-white font-bold bg-teal-400 nav-btn" href="#"
-            >Sign In</a
-          >
-        </div>
+        <button>
+          <img
+            class="w-12 md:hidden"
+            src="images/hamburger-md-svgrepo-com.svg"
+            alt=""
+          />
+        </button>
       </header>
       <div class="hero grid lg:grid-cols-2 justify-center items-center mb-20">
         <div class="hero-text flex flex-col justify-center mt-9 items-start">

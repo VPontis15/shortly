@@ -10,6 +10,10 @@
   .row {
     @apply flex justify-between items-center;
   }
+
+  .mobile-overlay {
+    @apply hidden md:flex;
+  }
 }
 
 @layer components {

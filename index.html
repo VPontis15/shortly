@@ -49,10 +49,12 @@
           />
         </button>
       </header>
-      <div class="hero grid lg:grid-cols-2 justify-center items-center mb-20">
-        <div class="hero-text flex flex-col justify-center mt-9 items-start">
+      <div class="hero grid lg:grid-cols-2 place-items-center mb-20">
+        <div
+          class="hero-text text-center lg:text-left flex flex-col justify-center mt-9 items-center lg:items-start"
+        >
           <h1
-            class="text-6xl leading-[1.2] max-w-[15ch] tracking-wide text-gray-800 font-semibold mb-10"
+            class="hero-heading text-center lg:text-left leading-[1.2] max-w-[15ch] tracking-wide text-gray-800 font-semibold mb-10"
           >
             More than just shorter links
           </h1>
@@ -66,7 +68,11 @@
             >Get Started</a
           >
         </div>
-        <img class="" src="images/illustration-working.svg" alt="" />
+        <img
+          class="-order-1 lg:order-1"
+          src="images/illustration-working.svg"
+          alt=""
+        />
       </div>
       <div class="p-4">
         <form

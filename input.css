@@ -18,6 +18,10 @@
   .hero-heading {
     font-size: clamp(2.75rem, 7.5vw, 3.75rem);
   }
+
+  .footer-link {
+    @apply hover:text-cyan;
+  }
 }
 
 @layer components {

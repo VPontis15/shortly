@@ -924,6 +924,11 @@ video {
   font-size: clamp(2.75rem, 7.5vw, 3.75rem);
 }
 
+.footer-link:hover {
+  --tw-text-opacity: 1;
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
+}
+
 .footer-heading {
   margin-bottom: 0.5rem;
   font-weight: 700;

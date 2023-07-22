@@ -7,6 +7,10 @@
     @apply w-[1100px] max-w-[90%] mx-auto;
   }
 
+  .nav-link {
+    @apply hover:text-slate-800 hover:font-semibold;
+  }
+
   .row {
     @apply flex justify-between items-center;
   }

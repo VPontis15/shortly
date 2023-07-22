@@ -904,6 +904,12 @@ video {
   max-width: 90%;
 }
 
+.nav-link:hover {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+}
+
 .row {
   display: flex;
   align-items: center;

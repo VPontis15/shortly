@@ -1020,6 +1020,10 @@ video {
   .sm\:m-0 {
     margin: 0px;
   }
+
+  .sm\:hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {

@@ -22,42 +22,39 @@
   <body class="text-gray-500">
     <div class="container">
       <header class="py-10 flex items-center justify-between mb-12">
-        <div class="flex gap-24 items-center justify-between">
+     
           <img src="images/logo.svg" alt="The logo of the company Shortly" />
 
-          <div class="mobile-overlay flex justify-between items-center">
-            <nav class="flex justify-between items-center">
-              <ul class="flex items-center gap-8">
+        
+          >
+            <nav class="flex l justify-between items-center relative">
+              <ul class="flex  md:flex-row items-center gap-8">
                 <li><a class="nav-link" href="#">Features</a></li>
                 <li><a class="nav-link" href="#">Pricing</a></li>
                 <li><a class="nav-link" href="#">Resources</a></li>
               </ul>
-            </nav>
+            
 
-            <div class="hidden md:flex md:flex-1 md:justify-end">
+            <div
+              class="  flex-col c md:flex md:flex-row flex-1 md:justify-end"
+            >
               <a class="nav-btn nav-link" href="#">Log In</a>
               <a
                 class="text-white font-bold bg-teal-400 nav-btn btn-hover"
                 href="#"
                 >Sign In</a
               >
-            </div>
+            
           </div>
-        </div>
-        <button>
-          <img
-            class="w-12 md:hidden"
-            src="images/hamburger-md-svgrepo-com.svg"
-            alt=""
-          />
-        </button>
+        </nav>
+       
       </header>
       <div class="hero grid lg:grid-cols-2 place-items-center mb-20">
         <div
           class="hero-text text-center lg:text-left flex flex-col justify-center mt-9 items-center lg:items-start"
         >
           <h1
-            class="hero-heading text-center lg:text-left leading-[1.2] max-w-[15ch] tracking-wide text-gray-800 font-semibold mb-10"
+            class="  hero-heading text-center lg:text-left leading-[1.2] max-w-[15ch] tracking-wide text-gray-800 font-semibold mb-10"
           >
             More than just shorter links
           </h1>
@@ -77,7 +74,7 @@
           alt="An illustration of a person working on their computer"
         />
       </div>
-      <div class="p-4">
+      <div class="p-4 max-w-[90%] mx-auto">
         <form
           class="flex mb-24 md:mb-0 flex-col md:flex-row bg-purple-950 p-8 gap-4 rounded-lg"
           action=""
@@ -224,5 +221,6 @@
         </div>
       </div>
     </footer>
+  </div>
   </body>
 </html>

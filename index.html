@@ -21,24 +21,25 @@
   </head>
   <body class="text-gray-500">
     <div class="container">
-      <header class="py-10 flex items-center justify-between mb-12">
-     
-          <img src="images/logo.svg" alt="The logo of the company Shortly" />
-
-        
-          >
-            <nav class="flex l justify-between items-center relative">
-              <ul class="flex  md:flex-row items-center gap-8">
-                <li><a class="nav-link" href="#">Features</a></li>
-                <li><a class="nav-link" href="#">Pricing</a></li>
-                <li><a class="nav-link" href="#">Resources</a></li>
+      <header class="py-10 relative ">
+      
+        <div class="flex-col  flex md:flex-row items-center justify-between mb-12">
+         
+          <img class="mr-auto" src="images/logo.svg" alt="The logo of the company Shortly" />
+          
+          
+            <nav class="  navbar  fixed md:static top-20 left-[100%] transition-all duration-500 ease-in-out   md:flex    text-center md:gap-5 py-12 px-10   w-full md:w-auto justify-between items-center ">
+              <ul class="flex  flex-col w-100%  md:flex-row items-center gap-4 md:gap-8">
+                <li class="nav-li "><a class="nav-link " href="#">Features</a></li>
+                <li class="nav-li"><a class="nav-link " href="#">Pricing</a></li>
+                <li class="nav-li"><a class="nav-link " href="#">Resources</a></li>
+               
               </ul>
             
-
-            <div
-              class="  flex-col c md:flex md:flex-row flex-1 md:justify-end"
+ <div
+              class="  flex-col   gap-4   md:flex-row w-full "
             >
-              <a class="nav-btn nav-link" href="#">Log In</a>
+              <a class=" p-4  hover:bg-teal-400 md:hover:bg-initial  nav-link block mb-4 md:mb-0 md:inline-block rounded-lg" href="#">Log In</a>
               <a
                 class="text-white font-bold bg-teal-400 nav-btn btn-hover"
                 href="#"
@@ -46,9 +47,11 @@
               >
             
           </div>
-        </nav>
        
-      </header>
+          
+        </nav>
+        <div class=" navBtn fixed right-2 top-12  h-6 w-8 flex md:hidden justify-between flex-col cursor-pointer "><span class="bg-black h-1 w-full rounded-xl"></span><span class="bg-black h-1 w-full rounded-xl"></span><span class="bg-black h-1 w-full rounded-xl"></span></div>
+      </div></header>
       <div class="hero grid lg:grid-cols-2 place-items-center mb-20">
         <div
           class="hero-text text-center lg:text-left flex flex-col justify-center mt-9 items-center lg:items-start"

@@ -8,7 +8,7 @@
   }
 
   .nav-link {
-    @apply hover:text-slate-800 hover:font-semibold;
+    @apply hover:text-slate-800 font-bold hover:font-bold;
   }
 
   .row {
@@ -66,7 +66,7 @@
 }
 
 .navbar {
-  @apply before:content-['']  before:w-full before:py-8  before:h-full before:block before:opacity-[.7] before:z-[-1] before:absolute before:top-0 before:right-[0] before:bg-slate-100 md:before:hidden;
+  @apply before:content-['']  before:w-full before:py-8  before:h-full before:block before:opacity-[.8] before:z-[-1] before:absolute before:top-0 before:right-[0] before:bg-slate-200 md:before:hidden;
 }
 
 .card-heading {
@@ -93,6 +93,6 @@
   /* display: flex;
   flex-direction: column;
   gap: 0.5rem; */
-  left: 30%;
+  left: 10%;
   transition: 0.75s ease-in-out;
 }

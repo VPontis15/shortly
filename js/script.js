@@ -43,16 +43,16 @@ submit.addEventListener("click", (e) => {
 });
 
 linksContainer.addEventListener("click", (e) => {
-  let copyBtn = document.querySelectorAll(".copy-btn ");
+  let copyBtns = document.querySelectorAll(".copy-btn ");
   let current;
-  [...copyBtn].forEach((btn) => {
+  [...copyBtns].forEach((btn) => {
     if (e.target === btn) {
       current = e.target;
 
       let shortLink = current.nextSibling.parentElement.children[0].innerText;
       btn.textContent = "✔ Copied";
       navigator.clipboard.writeText(shortLink);
-    }
+    } else btn.textContent = "Copy";
   });
   {
   }

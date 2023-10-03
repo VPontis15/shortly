@@ -18,7 +18,7 @@ const api = async function (url) {
     let html = ` <div class="row links-rows">
             <p class="font-bold text-black">${data.result.original_link}</p>
             <div class="flex gap-4 items-center">
-              <p class="link">${data.result.short_link}</p>
+              <p class="link short-link">${data.result.short_link}</p>
               <button class="copy-btn bg-cyan">Copy</button>
             </div>
           </div>`;
@@ -36,10 +36,24 @@ const api = async function (url) {
   }
 };
 
-const generateRow = function (a, b) {};
-
 submit.addEventListener("click", (e) => {
   e.preventDefault();
   url = document.getElementById("url").value;
   api(url);
+});
+
+linksContainer.addEventListener("click", (e) => {
+  let copyBtn = document.querySelectorAll(".copy-btn ");
+  let current;
+  [...copyBtn].forEach((btn) => {
+    if (e.target === btn) {
+      current = e.target;
+
+      let shortLink = current.nextSibling.parentElement.children[0].innerText;
+      btn.textContent = "✔ Copied";
+      navigator.clipboard.writeText(shortLink);
+    }
+  });
+  {
+  }
 });

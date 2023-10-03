@@ -13,9 +13,7 @@ navBtn.addEventListener("click", () => {
 
 const api = async function (url) {
   try {
-    const response = await fetch(
-      `https://api.shrtco.de/v2/shorten?url=${url}.html`
-    );
+    const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
     const data = await response.json();
     let html = ` <div class="row links-rows">
             <p class="font-bold text-black">${data.result.original_link}</p>
@@ -32,7 +30,7 @@ const api = async function (url) {
       linksContainer.removeChild(links[2]);
       linksContainer.insertAdjacentHTML("afterbegin", html);
     }
-    console.log(links.length);
+    // console.log(links.length);
   } catch (error) {
     console.error("Fetch error:", error);
   }

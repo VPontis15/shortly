@@ -4,6 +4,7 @@ const navBtn = document.querySelector(".navBtn");
 const navbar = document.querySelector(".navbar");
 const submit = document.getElementById("submit");
 const linksContainer = document.querySelector(".links-container");
+const formContainer = document.querySelector(".form-section");
 let url;
 let links;
 
@@ -22,7 +23,11 @@ const api = async function (url) {
               <button class="copy-btn bg-cyan">Copy</button>
             </div>
           </div>`;
-
+    if (linksContainer.classList.contains("hidden")) {
+      navigator.clipboard.writeText(data.result.short_link);
+      let link = `<p class= "text-center text-cyan text-lg"> ${data.result.short_link}</p>`;
+      formContainer.insertAdjacentHTML("beforebegin", link);
+    }
     links = document.querySelectorAll(".links-rows");
     if (links.length < 3) {
       linksContainer.insertAdjacentHTML("afterbegin", html);
